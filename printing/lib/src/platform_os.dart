@@ -14,16 +14,6 @@
  * limitations under the License.
  */
 
-import 'dart:typed_data';
+import 'dart:io' show Platform;
 
-import 'print_job.dart';
-
-/// Set the Pdf document data
-void setDocumentFfi(PrintJob job, Uint8List data) {
-  throw UnimplementedError('Not using FFI');
-}
-
-/// Set the Pdf Error message
-void setErrorFfi(PrintJob job, String message) {
-  throw UnimplementedError('Not using FFI');
-}
+final isAndroid = Platform.isAndroid;
